@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="CasinoGames">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/hamcrest.jar!/" />
-      <root url="jar://$PROJECT_DIR$/junit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/CasinoGames/junit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/CasinoGames/hamcrest.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

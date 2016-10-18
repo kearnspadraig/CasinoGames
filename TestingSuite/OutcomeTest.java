@@ -1,9 +1,9 @@
 package TestingSuite;
 
-import static org.junit.Assert.*;
-
 import Files.Outcome;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 
 
@@ -30,7 +30,7 @@ public class OutcomeTest {
     public void testEqualityPass() throws Exception{
         assertTrue(o1 == o3);
         assertTrue(o1.equals(o3));
-        assertNotTrue(o1.equals(o2));
+        assertFalse(o1.equals(o2));
     }
 
 	@Test 

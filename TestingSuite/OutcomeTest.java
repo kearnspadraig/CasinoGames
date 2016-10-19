@@ -1,13 +1,17 @@
 package TestingSuite;
 
-import static org.junit.Assert.*;
-
 import Files.Outcome;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 
 
 public class OutcomeTest {
+
+	Outcome o1 = new Outcome("even", 2);
+    Outcome o2 = new Outcome("Any Craps", 8);
+    Outcome o3 = new Outcome("even",2);
 
 	@Test 
 	public void type() throws Exception {
@@ -21,6 +25,13 @@ public class OutcomeTest {
 		Outcome target = new Outcome(n, o);
 		assertNotNull(target);
 	}
+
+	@Test
+    public void testEqualityPass() throws Exception{
+        assertTrue(o1 == o3);
+        assertTrue(o1.equals(o3));
+        assertFalse(o1.equals(o2));
+    }
 
 	@Test 
 	public void winAmount_A$int() throws Exception {

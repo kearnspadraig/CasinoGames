@@ -6,8 +6,9 @@ import java.util.*;
  * Created by Padraig on 13/10/2016.
  */
 public class Bin {
-    private Set outcomes;
+    private Set<Outcome> outcomes;
 
+    // **Constructors**
     public Bin(){
         outcomes = new TreeSet();
     }
@@ -21,13 +22,10 @@ public class Bin {
 
     public Bin(Collection<Outcome> outcomesIn){
         this();
-        Iterator i = outcomesIn.iterator();
-        for(Outcome o: i){
-            outcomes.add(o);
-        }
+        outcomes.addAll(outcomesIn);
     }
 
-
+    // **Methods**
     public void add(Outcome outcome){
         outcomes.add(outcome);
     }

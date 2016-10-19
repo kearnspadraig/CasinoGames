@@ -9,9 +9,9 @@ import static org.junit.Assert.*;
 
 public class OutcomeTest {
 
-	Outcome o1 = new Outcome("even", 2);
-    Outcome o2 = new Outcome("Any Craps", 8);
-    Outcome o3 = new Outcome("even",2);
+	private Outcome o1 = new Outcome("even", 2);
+    private Outcome o2 = new Outcome("Any Craps", 8);
+    private Outcome o3 = new Outcome("even",2);
 
 	@Test 
 	public void type() throws Exception {
@@ -20,7 +20,7 @@ public class OutcomeTest {
 
 	@Test 
 	public void instantiation() throws Exception {
-		String n = null;
+		String n = "test";
 		int o = 0;
 		Outcome target = new Outcome(n, o);
 		assertNotNull(target);
@@ -30,12 +30,12 @@ public class OutcomeTest {
     public void testEqualityPass() throws Exception{
         assertTrue(o1 == o3);
         assertTrue(o1.equals(o3));
-        assertFalse(o1.equals(o2));
-    }
+		assertFalse(o1.equals(o2));
+	}
 
 	@Test 
 	public void winAmount_A$int() throws Exception {
-		String n = null;
+		String n = "Test";
 		int o = 0;
 		Outcome target = new Outcome(n, o);
 		int amount = 0;
@@ -46,13 +46,12 @@ public class OutcomeTest {
 
 	@Test 
 	public void equals_A$Object() throws Exception {
-		String n = null;
+		String n = "test";
 		int o = 0;
 		Outcome target = new Outcome(n, o);
-		Object other = null;
+		Object other = new Outcome("one",28);
 		boolean actual = target.equals(other);
-		boolean expected = false;
-		assertEquals(expected, actual);
+		assertEquals(false, actual);
 	}
 
 	@Test 

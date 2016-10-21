@@ -1,6 +1,6 @@
 package Files;
 
-public class Outcome {
+public class Outcome implements Comparable {
 	private String name;
 	private int odds;
 	
@@ -24,5 +24,9 @@ public class Outcome {
 	
 	public String toString(){
 		return (name + " (" + odds + ":1)" );
+	}
+
+	public int compareTo(Object other){
+		return this.toString().compareTo(other.toString());
 	}
 }

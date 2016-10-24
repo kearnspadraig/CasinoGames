@@ -13,7 +13,17 @@ public class BinBuilder {
     public void buildBins(Wheel wheel){
         generateBins(wheel);
         generateStraightBets(wheel);
+        generateSplitBets(wheel);
+        generateStreetBets(wheel);
     }
+
+    private void generateBins(Wheel wheel){
+        Vector<Bin> bins = wheel.getAll();
+        for (int i = 0; i <= 37; i++){
+            bins.add(i, new Bin());
+        }
+    }
+
 
     private void generateStraightBets(Wheel wheel){
         int odds = RouletteGame.StraightBet;
@@ -25,10 +35,70 @@ public class BinBuilder {
 
     }
 
-    private void generateBins(Wheel wheel){
-        Vector<Bin> bins = wheel.getAll();
-        for (int i = 0; i <= 37; i++){
-            bins.add(i, new Bin());
+    private void generateSplitBets(Wheel wheel){
+        int odds = RouletteGame.SplitBet;
+        int num1;
+        int num2;
+
+        for(num1 = 1; num1 < 36; num1++){
+            if(num1 % 3 == 0){
+                continue;
+            }
+            num2 = num1 + 1;
+
+            if(validSplitBet(num1,num2)){
+                Outcome splitBet = new Outcome(
+                        "Split Bet " + num1 + " - " + num2, odds);
+                wheel.addOutcome(num1, splitBet);
+                wheel.addOutcome(num2, splitBet);
+            }
         }
+
+        for(num1 = 1; num1 < 34; num1++){
+            num2 = num1 + 3;
+
+            if(validSplitBet(num1,num2)){
+                Outcome splitBet = new Outcome(
+                        "Split Bet " + num1 + " - " + num2, odds);
+                wheel.addOutcome(num1, splitBet);
+                wheel.addOutcome(num2, splitBet);
+            }
+        }
+
     }
+
+    private void generateStreetBets(Wheel wheel){
+        int odds = RouletteGame.StreetBet;
+        int num1, num2, num3;
+
+        for(int i = 0; i < 12; i++){
+            num1 = 1 + i * 3;
+            num2 = num1 + 1;
+            num3 = num1 + 2;
+
+            String betName = String.format(
+                    "Street Bet %d - %d - %d", num1,num2,num3
+            );
+            Outcome streetBet = new Outcome(betName, odds);
+            wheel.addOutcome(num1,streetBet);
+            wheel.addOutcome(num2,streetBet);
+            wheel.addOutcome(num3,streetBet);
+
+        }
+
+    }
+
+    private boolean validSplitBet(int num1, int num2){
+        if(Math.abs(num1 - num2) != 1 && Math.abs(num1 - num2) != 3){
+            System.out.print("Not a split bet");
+            return false;
+        }
+        if(num1 >36 || num1 < 0 || num2 > 36 || num2 < 0){
+            System.out.print("Number out of range");
+            return false;
+        }
+
+        return true;
+    }
+
 }

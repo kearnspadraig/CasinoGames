@@ -5,4 +5,8 @@ package Files;
  */
 public class RouletteGame {
     public static final int StraightBet = 35;
+    public static final int SplitBet = 17;
+    public static final int StreetBet = 11;
+
+
 }

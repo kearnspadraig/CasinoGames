@@ -5,18 +5,20 @@ import java.util.Vector;
 /**
  * Created by Padraig on 24/10/2016.
  */
-public class BinBuilder {
-    public BinBuilder(){
+class BinBuilder {
+    BinBuilder(){
 
     }
 
-    public void buildBins(Wheel wheel){
+    void buildBins(Wheel wheel){
         generateBins(wheel);
         generateStraightBets(wheel);
         generateSplitBets(wheel);
         generateStreetBets(wheel);
         generateCornerBets(wheel);
         generateLineBets(wheel);
+        generateDozenBets(wheel);
+        generateColumnBets(wheel);
     }
 
     private void generateBins(Wheel wheel){
@@ -116,7 +118,7 @@ public class BinBuilder {
     private void generateLineBets(Wheel wheel){
         int num1,num2,num3,num4,num5,num6;
         int odds = RouletteGame.LineBet;
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i <= 10; i++){
             num1 = i * 3 + 1;
             num2 = num1 + 1;
             num3 = num1 + 2;
@@ -129,13 +131,37 @@ public class BinBuilder {
                     num1,num2,num3,num4,num5,num6
             );
             Outcome outcome = new Outcome(betName, odds);
-            wheel.addOutcome(num1, outcome);
-            wheel.addOutcome(num2, outcome);
-            wheel.addOutcome(num3, outcome);
-            wheel.addOutcome(num4, outcome);
-            wheel.addOutcome(num5, outcome);
-            wheel.addOutcome(num6, outcome);
+            for (int j = num1; j <num1+6; j++)
+                wheel.addOutcome(j, outcome);
 
+        }
+    }
+
+    private void generateDozenBets(Wheel wheel){
+        int num1;
+        int odds = RouletteGame.DozenBet;
+
+        for (int i = 0; i < 3; i++){
+            num1 = 12 * i + 1;
+            String betname = String.format(
+                    "Dozen Bet %d-%d",
+                    num1, num1 + 11);
+            Outcome outcome = new Outcome(betname, odds);
+            for (int j = num1; j < num1+12; j++){
+                wheel.addOutcome(j, outcome);
+            }
+        }
+    }
+
+    private void generateColumnBets(Wheel wheel){
+        int odds = RouletteGame.ColumnBet;
+        for (int i = 0; i < 3; i++){
+            String betName = String.format("Column Bet %d", i+1);
+            Outcome outcome = new Outcome(betName,odds);
+            for (int j = 0; j<12; j++){
+                int binNum = j * 3 + 1 + i;
+                wheel.addOutcome(binNum, outcome);
+            }
         }
     }
 

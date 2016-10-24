@@ -9,8 +9,8 @@ import java.util.Vector;
 import java.util.Random;
 
 public class Wheel {
-    Vector<Bin> bins;
-    Random rng;
+    private Vector<Bin> bins;
+    private Random rng;
 
     public Wheel(Random givenRng){
         rng = givenRng;
@@ -25,7 +25,7 @@ public class Wheel {
         binAtIndex.add(outcomeIn);
     }
 
-    public Bin next(){
+    public Bin spin(){
         int winningBin = rng.nextInt(bins.size());
         return this.get(winningBin);
     }
@@ -34,11 +34,12 @@ public class Wheel {
         return bins.get(bin);
     }
 
+    public Vector<Bin> getAll(){return bins;}
+
     public String toString(){
         String finalString = "";
-        Iterator binprinter = bins.iterator();
-        while(binprinter.hasNext()){
-            finalString+= binprinter.next().toString() + '\n';
+        for (Object bin : bins) {
+            finalString += bin.toString() + '\n';
         }
         return finalString;
     }

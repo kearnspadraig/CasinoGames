@@ -26,7 +26,7 @@ public class BinBuilder {
     }
 
     private void generateBins(Wheel wheel){
-        Vector<Bin> bins = wheel.bins;
+        Vector<Bin> bins = wheel.getAll();
         for (int i = 0; i <= 37; i++){
             bins.add(i, new Bin());
         }

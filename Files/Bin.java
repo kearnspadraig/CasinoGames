@@ -30,6 +30,10 @@ public class Bin {
         outcomes.add(outcome);
     }
 
+    public Iterator<Outcome> outcomeIter(){
+        return outcomes.iterator();
+    }
+
     public String toString(){
         String readable = "";
         for(Outcome o: outcomes){

@@ -45,7 +45,7 @@ public class WheelTest {
 
         while(outcomeIter.hasNext()){
             String bin6String = outcomeIter.next().toString();
-            System.out.print(bin6String);
+            //System.out.print(bin6String);
             assertFalse(bin6String.equals(""));
         }
     }

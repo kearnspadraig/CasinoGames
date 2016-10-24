@@ -11,6 +11,11 @@ class RouletteGame {
     static final int LineBet = 5;
     static final int DozenBet = 2;
     static final int ColumnBet = 2;
-
+    static final int EvenBet = 1;
+    static final int OddBet = 1;
+    static final int RedBet = 1;
+    static final int BlackBet = 1;
+    static final int HighBet = 1;
+    static final int LowBet = 1;
 
 }

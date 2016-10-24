@@ -1,5 +1,7 @@
 package Files;
 
+import java.util.Set;
+import java.util.TreeSet;
 import java.util.Vector;
 
 /**
@@ -19,6 +21,7 @@ class BinBuilder {
         generateLineBets(wheel);
         generateDozenBets(wheel);
         generateColumnBets(wheel);
+        generateEvenMoneyBets(wheel);
     }
 
     private void generateBins(Wheel wheel){
@@ -163,6 +166,50 @@ class BinBuilder {
                 wheel.addOutcome(binNum, outcome);
             }
         }
+    }
+
+    private void generateEvenMoneyBets(Wheel wheel){
+        Outcome outcome = new Outcome("Odd Bet", RouletteGame.OddBet);
+        Outcome outcomeRed = new Outcome("Red Bet", RouletteGame.RedBet);
+        Outcome outcomeBlack = new Outcome("Black Bet", RouletteGame.BlackBet);
+
+
+        for (int i = 1; i < 37; i=i+2){
+            wheel.addOutcome(i, outcome);
+        }
+
+        outcome = new Outcome("Even Bet", RouletteGame.EvenBet);
+        for (int i = 2; i < 37; i=i+2){
+            wheel.addOutcome(i, outcome);
+        }
+
+        int[] redArray = {1, 3, 5, 7, 9, 12, 14, 16, 18, 19,
+                21, 23, 25, 27, 30, 32, 34, 36};
+        Set<Integer> red = new TreeSet();
+        for (int i: redArray
+             ) {
+            red.add(i);
+        }
+
+        for (int i = 1; i<37; i++){
+            if (red.contains(i)){
+                wheel.addOutcome(i, outcomeRed);
+            }
+            else{
+                wheel.addOutcome(i, outcomeBlack);
+            }
+        }
+
+        outcome = new Outcome("High Bet", RouletteGame.HighBet);
+        for (int i = 19; i < 37; i++){
+            wheel.addOutcome(i, outcome);
+        }
+
+        outcome = new Outcome("Low Bet", RouletteGame.LowBet);
+        for (int i = 1; i < 19; i++){
+            wheel.addOutcome(i, outcome);
+        }
+
     }
 
     private boolean validSplitBet(int num1, int num2){

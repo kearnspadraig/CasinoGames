@@ -15,6 +15,7 @@ public class BinBuilder {
         generateStraightBets(wheel);
         generateSplitBets(wheel);
         generateStreetBets(wheel);
+        generateCornerBets(wheel);
     }
 
     private void generateBins(Wheel wheel){
@@ -86,6 +87,29 @@ public class BinBuilder {
 
         }
 
+    }
+
+    private void generateCornerBets(Wheel wheel){
+        int num1, num2, num3, num4;
+        int odds = RouletteGame.CornerBet;
+        for (int j = 1; j<=2; j++){
+            for (int i = 0; i < 11; i++) {
+                num1 = i * 3 + j;
+                num2 = num1 + 1;
+                num3 = num1 + 3;
+                num4 = num1 + 4;
+
+                String betName = String.format(
+                        "Corner Bet %d - %d - %d - %d",
+                        num1, num2, num3, num4
+                );
+                Outcome outcome = new Outcome(betName, odds);
+                wheel.addOutcome(num1, outcome);
+                wheel.addOutcome(num2, outcome);
+                wheel.addOutcome(num3, outcome);
+                wheel.addOutcome(num4, outcome);
+            }
+        }
     }
 
     private boolean validSplitBet(int num1, int num2){

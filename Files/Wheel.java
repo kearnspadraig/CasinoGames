@@ -4,11 +4,10 @@ package Files;
  * Created by Padraig on 21/10/2016.
  */
 
-import java.util.Iterator;
 import java.util.Vector;
 import java.util.Random;
 
-public class Wheel {
+class Wheel {
     private Vector<Bin> bins;
     private Random rng;
 
@@ -17,7 +16,6 @@ public class Wheel {
         bins = new Vector<Bin>(37);
         BinBuilder builder = new BinBuilder();
         builder.buildBins(this);
-        //ToDo populateBins
     }
 
     public void addOutcome(int bin, Outcome outcomeIn){

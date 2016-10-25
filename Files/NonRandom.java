@@ -5,11 +5,11 @@ import java.util.Random;
 /**
  * Created by Padraig on 21/10/2016.
  */
-public class NonRandom extends Random {
+class NonRandom extends Random {
     private int current = 0;
     private int max;
 
-    public NonRandom(){
+    NonRandom(){
         current = 0;
         max = 37;
     }
@@ -23,7 +23,7 @@ public class NonRandom extends Random {
         max = tmax;
     }
 
-    public int next(){
+    int next(){
         if( current > max){
             current = 0;
         }

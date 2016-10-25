@@ -15,9 +15,7 @@ public class Bin {
 
     public Bin(Outcome [] outcomesIn){
         this();
-        for(Outcome o: outcomesIn){
-            outcomes.add(o);
-        }
+        outcomes.addAll(Arrays.asList(outcomesIn));
     }
 
     public Bin(Collection<Outcome> outcomesIn){

@@ -10,16 +10,11 @@ public class Outcome implements Comparable {
 	}
 
 	public int winAmount(int amount){
-		int winnings = amount * odds;
-		
-		return winnings;
+		return amount * odds;
 	}
 	
 	public boolean equals(Outcome other){
-		if (other.name == this.name){
-			return true;
-		}
-		return false;
+		return (other.name.equals(this.name));
 	}
 	
 	public String toString(){

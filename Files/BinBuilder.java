@@ -146,10 +146,10 @@ class BinBuilder {
 
         for (int i = 0; i < 3; i++){
             num1 = 12 * i + 1;
-            String betname = String.format(
+            String betName = String.format(
                     "Dozen Bet %d-%d",
                     num1, num1 + 11);
-            Outcome outcome = new Outcome(betname, odds);
+            Outcome outcome = new Outcome(betName, odds);
             for (int j = num1; j < num1+12; j++){
                 wheel.addOutcome(j, outcome);
             }

@@ -9,9 +9,9 @@ import static org.junit.Assert.*;
 
 public class OutcomeTest {
 
-	private Outcome o1 = new Outcome("even", 2);
-    private Outcome o2 = new Outcome("Any Craps", 8);
-    private Outcome o3 = new Outcome("even",2);
+	private final Outcome o1 = new Outcome("even", 2);
+    private final Outcome o2 = new Outcome("Any Craps", 8);
+    private final Outcome o3 = new Outcome("even",2);
 
 	@Test 
 	public void type() throws Exception {

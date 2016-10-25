@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 public class WheelTest {
     private Random rng = new NonRandom();
-    private Wheel wheel = new Wheel(rng);
+    private final Wheel wheel = new Wheel(rng);
 
     @Test
     public void addOutcome() throws Exception {
@@ -21,7 +21,6 @@ public class WheelTest {
         Bin testBin = wheel.get(testIndex);
         assertTrue(testBin.toString().contains(outcomeName));
 
-//ToDo Fill in tests
     }
 
     @Test

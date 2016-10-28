@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10db87b0-79a7-4655-a99f-264807fe6327" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Files/Bet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/Bin.java" afterPath="$PROJECT_DIR$/Files/Bin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/BinBuilder.java" afterPath="$PROJECT_DIR$/Files/BinBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/NonRandom.java" afterPath="$PROJECT_DIR$/Files/NonRandom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/Outcome.java" afterPath="$PROJECT_DIR$/Files/Outcome.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/Wheel.java" afterPath="$PROJECT_DIR$/Files/Wheel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/WheelTest.java" afterPath="$PROJECT_DIR$/Files/WheelTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestingSuite/BinTest.java" afterPath="$PROJECT_DIR$/TestingSuite/BinTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestingSuite/OutcomeTest.java" afterPath="$PROJECT_DIR$/TestingSuite/OutcomeTest.java" />
     </list>
     <ignored path="CasinoGames.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -130,7 +123,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BinTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestingSuite/BinTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="182">
@@ -138,6 +131,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Files/Bet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -172,6 +175,7 @@
         <option value="$PROJECT_DIR$/Files/Outcome.java" />
         <option value="$PROJECT_DIR$/Files/BinBuilder.java" />
         <option value="$PROJECT_DIR$/TestingSuite/BinTest.java" />
+        <option value="$PROJECT_DIR$/Files/Bet.java" />
       </list>
     </option>
   </component>
@@ -700,7 +704,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477344220823</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Code Cleanup">
+      <created>1477396008273</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1477396008273</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -804,7 +815,8 @@
     <MESSAGE value="BinBuilder - LineBets" />
     <MESSAGE value="BinBuilder - Dozen + Column Bets" />
     <MESSAGE value="BinBuilder - Even Bets" />
-    <option name="LAST_COMMIT_MESSAGE" value="BinBuilder - Even Bets" />
+    <MESSAGE value="Code Cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code Cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -817,14 +829,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Files/RouletteGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Files/Wheel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1348,6 +1352,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Files/Bet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

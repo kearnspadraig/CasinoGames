@@ -4,6 +4,8 @@ package Files;
  * Created by Padraig on 21/10/2016.
  */
 
+import java.util.Hashtable;
+import java.util.Map;
 import java.util.Vector;
 import java.util.Random;
 
@@ -11,16 +13,28 @@ class Wheel {
     private Vector<Bin> bins;
     private Random rng;
 
+    private Map<String, Outcome> outcomeMap;
+
     public Wheel(Random givenRng){
         rng = givenRng;
         bins = new Vector<Bin>(37);
+        outcomeMap = new Hashtable();
         BinBuilder builder = new BinBuilder();
         builder.buildBins(this);
     }
 
     public void addOutcome(int bin, Outcome outcomeIn){
+        outcomeMap.put(outcomeIn.getName(), outcomeIn);
         Bin binAtIndex = bins.get(bin);
         binAtIndex.add(outcomeIn);
+    }
+
+    public Outcome getOutcome(String name){
+        return outcomeMap.get(name);
+    }
+
+    public Map getAllOutcomes(){
+        return outcomeMap;
     }
 
     public Bin spin(){

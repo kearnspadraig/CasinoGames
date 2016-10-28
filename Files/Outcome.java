@@ -16,6 +16,10 @@ public class Outcome implements Comparable {
 	public boolean equals(Outcome other){
 		return (other.name.equals(this.name));
 	}
+
+	public String getName(){
+        return name;
+    }
 	
 	public String toString(){
 		return (name + " (" + odds + ":1)" );

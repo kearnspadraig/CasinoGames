@@ -3,6 +3,7 @@ package Files;
 import org.junit.Test;
 
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Random;
 
 import static org.junit.Assert.*;
@@ -46,6 +47,19 @@ public class WheelTest {
             String bin6String = outcomeIter.next().toString();
             //System.out.print(bin6String);
             assertFalse(bin6String.equals(""));
+        }
+    }
+
+    @Test
+    public void mapTest() throws Exception {
+        Map testMap = wheel.getAllOutcomes();
+        for (Object o: testMap.values()
+             ) {
+            if(o.getClass().equals(Outcome.class)){
+                System.out.println(o.toString());
+            }else{
+                fail();
+            }
         }
     }
 

@@ -35,7 +35,7 @@ public class TableTest {
   }
 
   @Test
-  public void toString() throws Exception {
+  public void toStringTest() throws Exception {
 
   }
 

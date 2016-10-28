@@ -10,16 +10,25 @@ import java.util.LinkedList;
 public class Table {
   private int minimumBet;
   private int limit;
+  private int maxRatio = 50;
   Collection<Bet> bets;
   Wheel wheel;
 
+
   Table(){
+    minimumBet = 2;
+    limit = getLimit(minimumBet);
     bets = new LinkedList<>();
   }
 
   Table(int minimumBetT){
     bets = new LinkedList<>();
     minimumBet = minimumBetT;
+    limit = getLimit(minimumBet);
+  }
+
+  int getLimit(int minimum){
+    return minimum * maxRatio;
   }
 
   public void placeBet(Bet bet) throws InvalidBet{

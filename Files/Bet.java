@@ -12,13 +12,13 @@ public class Bet {
         outcome = outcomeT;
     }
 
-    Outcome getOutcome(){return outcome;}
+    public Outcome getOutcome(){return outcome;}
 
-    int winAmount(){
+    public int winAmount(){
         return outcome.winAmount(amount) + amount;
     }
 
-    int loseAmount(){
+    public int loseAmount(){
         return amount;
     }
 

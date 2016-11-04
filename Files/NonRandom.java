@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Created by Padraig on 21/10/2016.
  */
-class NonRandom extends Random {
+public class NonRandom extends Random {
     private int current = 0;
     private int max;
 

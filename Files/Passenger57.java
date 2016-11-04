@@ -13,6 +13,10 @@ public class Passenger57 extends Player {
         black = activeTable.wheel.getOutcome("Black Bet");
     }
 
+    public boolean playing(){
+        return (5 < stake && roundsToGo > 0);
+    }
+
     public void placeBets(){
         try {
             table.placeBet(new Bet(5, black));

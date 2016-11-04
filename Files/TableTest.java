@@ -50,17 +50,9 @@ public class TableTest {
 
   @Test
   public void isValid() throws Exception {
-    boolean passed = false;
-    try{
-      table.placeBet(new Bet(500, testOutcome));
-      table.placeBet(new Bet(500, testOutcome));
-      table.placeBet(new Bet(500, testOutcome));
-    }catch (Exception e){
-      assertTrue(e.getClass().equals(InvalidBet.class));
-      passed = true;
-    }
-    System.out.print(table.getLimit(2));
-    assertTrue(passed);
+    int limit = table.getLimit();
+    assertFalse(table.isValid(new Bet(limit + 1, testOutcome)));
+    assertTrue(table.isValid(new Bet(limit - 1, testOutcome)));
   }
 
   @Test

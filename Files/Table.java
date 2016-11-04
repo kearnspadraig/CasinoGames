@@ -29,9 +29,13 @@ public class Table {
     wheel = inWheel;
   }
 
-  int getLimit(int minimum){
+  private int getLimit(int minimum){
     return minimum * maxRatio;
   }
+  public int getLimit(){
+    return limit;
+  }
+
 
   public void placeBet(Bet bet) throws InvalidBet{
     if(isValid(bet)) {
@@ -47,9 +51,9 @@ public class Table {
     bets.remove(bet);
   }
 
-  public boolean isValid(Bet checkBet) throws InvalidBet{
+  public boolean isValid(Bet checkBet) {
     if (betsPlacedTotal() + checkBet.loseAmount() > limit){
-      throw new InvalidBet();
+      return false;
     }
     return true;
   }

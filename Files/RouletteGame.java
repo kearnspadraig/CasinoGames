@@ -31,6 +31,9 @@ class RouletteGame {
 
     public void cycle(Player inPlayer){
         player = inPlayer;
+        if (!player.playing()){
+            return;
+        }
         player.placeBets();
         Bin winningBin = wheel.spin();
 

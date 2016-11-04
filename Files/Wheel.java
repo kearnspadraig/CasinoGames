@@ -15,12 +15,17 @@ class Wheel {
 
     private Map<String, Outcome> outcomeMap;
 
-    public Wheel(Random givenRng){
-        rng = givenRng;
+    public Wheel(){
         bins = new Vector<Bin>(37);
         outcomeMap = new Hashtable();
         BinBuilder builder = new BinBuilder();
         builder.buildBins(this);
+        rng = new Random();
+    }
+
+    public Wheel(Random givenRng){
+        this();
+        rng = givenRng;
     }
 
     public void addOutcome(int bin, Outcome outcomeIn){

@@ -9,7 +9,7 @@ public class Passenger57 extends Player {
 
     Passenger57(Table activeTable){
         table = activeTable;
-        System.out.println("Table.wheel = " + table.wheel.toString());
+        //System.out.println("Table.wheel = " + table.wheel.toString());
         black = activeTable.wheel.getOutcome("Black Bet");
     }
 
@@ -22,10 +22,10 @@ public class Passenger57 extends Player {
     }
 
     public void win(Bet winningBet){
-        System.out.println(String.format("Winning Bet! %s \n Won %d", winningBet.toString(), winningBet.winAmount()));
+        System.out.println(String.format("Winning Bet! %s \n Won %d Result was %s", winningBet.toString(), winningBet.winAmount(), winningBet.getOutcome().toString()));
     }
 
     public void lose(Bet winningBet){
-        System.out.println(String.format("Losing Bet! %s \n lost %d", winningBet.toString(), winningBet.loseAmount()));
+        System.out.println(String.format("Losing Bet! %s \n lost %d Result was %s", winningBet.toString(), winningBet.loseAmount(), winningBet.getOutcome().toString()));
     }
 }

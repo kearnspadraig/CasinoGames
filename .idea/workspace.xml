@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10db87b0-79a7-4655-a99f-264807fe6327" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Files/Passenger57.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Files/Player.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Files/RouletteGameTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/Bet.java" afterPath="$PROJECT_DIR$/Files/Bet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/Bin.java" afterPath="$PROJECT_DIR$/Files/Bin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/RouletteGame.java" afterPath="$PROJECT_DIR$/Files/RouletteGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/Table.java" afterPath="$PROJECT_DIR$/Files/Table.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/TableTest.java" afterPath="$PROJECT_DIR$/Files/TableTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/WheelTest.java" afterPath="$PROJECT_DIR$/Files/WheelTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/Passenger57.java" afterPath="$PROJECT_DIR$/Files/Passenger57.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/RouletteGameTest.java" afterPath="$PROJECT_DIR$/Files/RouletteGameTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Files/Wheel.java" afterPath="$PROJECT_DIR$/Files/Wheel.java" />
     </list>
     <ignored path="CasinoGames.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +26,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Outcome.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Files/Outcome.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+              <folding>
+                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#366#367#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Bin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Files/Bin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            <state relative-caret-position="117">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="7" />
               <folding>
                 <element signature="e#497#498#0" expanded="true" />
                 <element signature="e#534#535#0" expanded="true" />
@@ -50,8 +57,8 @@
       <file leaf-file-name="Table.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Files/Table.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+            <state relative-caret-position="136">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="5" />
               <folding>
                 <element signature="e#782#783#0" expanded="true" />
                 <element signature="e#804#805#0" expanded="true" />
@@ -60,71 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Files/BinBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="173" column="27" selection-start-line="173" selection-start-column="23" selection-end-line="173" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TableTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Files/TableTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RouletteGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Files/RouletteGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RouletteGameTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Files/RouletteGameTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Passenger57.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Files/Passenger57.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WheelTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Files/WheelTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Files/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="-391">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -133,12 +80,62 @@
       <file leaf-file-name="Wheel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Files/Wheel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="43" />
+            <state relative-caret-position="135">
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Files/BinBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="543">
+              <caret line="216" column="28" selection-start-line="216" selection-start-column="23" selection-end-line="216" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NonRandom.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Files/NonRandom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-58">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
               <folding>
-                <element signature="e#734#735#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
+                <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#290#291#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RouletteGameTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Files/RouletteGameTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Passenger57.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Files/Passenger57.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Files/Bet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -169,17 +166,17 @@
         <option value="$PROJECT_DIR$/TestingSuite/BinTest.java" />
         <option value="$PROJECT_DIR$/Files/BinBuilder.java" />
         <option value="$PROJECT_DIR$/Files/Outcome.java" />
-        <option value="$PROJECT_DIR$/Files/Wheel.java" />
         <option value="$PROJECT_DIR$/Files/BetTest.java" />
         <option value="$PROJECT_DIR$/Files/Bet.java" />
         <option value="$PROJECT_DIR$/Files/Bin.java" />
         <option value="$PROJECT_DIR$/Files/Player.java" />
         <option value="$PROJECT_DIR$/Files/WheelTest.java" />
-        <option value="$PROJECT_DIR$/Files/Passenger57.java" />
         <option value="$PROJECT_DIR$/Files/TableTest.java" />
-        <option value="$PROJECT_DIR$/Files/RouletteGameTest.java" />
         <option value="$PROJECT_DIR$/Files/RouletteGame.java" />
         <option value="$PROJECT_DIR$/Files/Table.java" />
+        <option value="$PROJECT_DIR$/Files/Wheel.java" />
+        <option value="$PROJECT_DIR$/Files/RouletteGameTest.java" />
+        <option value="$PROJECT_DIR$/Files/Passenger57.java" />
       </list>
     </option>
   </component>
@@ -828,31 +825,17 @@
       <option name="project" value="LOCAL" />
       <updated>1477673884299</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Game First pass">
+      <created>1478226437115</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1478226437115</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RouletteGameTest - 2016.11.04 at 02h 13m 42s.xml">
-      <configuration name="RouletteGameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouletteGameTest - 2016.11.04 at 02h 17m 14s.xml">
-      <configuration name="RouletteGameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouletteGameTest - 2016.11.04 at 02h 18m 13s.xml">
-      <configuration name="RouletteGameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouletteGameTest - 2016.11.04 at 02h 18m 56s.xml">
-      <configuration name="RouletteGameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouletteGameTest - 2016.11.04 at 02h 22m 55s.xml">
-      <configuration name="RouletteGameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouletteGameTest - 2016.11.04 at 02h 23m 18s.xml">
-      <configuration name="RouletteGameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RouletteGameTest - 2016.11.04 at 02h 23m 26s.xml">
-      <configuration name="RouletteGameTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RouletteGameTest - 2016.11.04 at 02h 23m 34s.xml">
       <configuration name="RouletteGameTest" configurationId="JUnit" />
     </history-entry>
@@ -861,6 +844,27 @@
     </history-entry>
     <history-entry file="RouletteGameTest - 2016.11.04 at 02h 26m 34s.xml">
       <configuration name="RouletteGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouletteGameTest - 2016.11.04 at 14h 19m 30s.xml">
+      <configuration name="RouletteGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouletteGameTest - 2016.11.04 at 14h 28m 21s.xml">
+      <configuration name="RouletteGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouletteGameTest - 2016.11.04 at 14h 44m 39s.xml">
+      <configuration name="RouletteGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouletteGameTest - 2016.11.04 at 14h 45m 59s.xml">
+      <configuration name="RouletteGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouletteGameTest - 2016.11.04 at 14h 46m 19s.xml">
+      <configuration name="RouletteGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RouletteGameTest - 2016.11.04 at 14h 53m 02s.xml">
+      <configuration name="RouletteGameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WheelTest - 2016.11.04 at 14h 42m 37s.xml">
+      <configuration name="WheelTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -872,9 +876,9 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3252688" sideWeight="0.46915168" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34274194" sideWeight="0.39138818" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34274194" sideWeight="0.39460155" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34274194" sideWeight="0.6086118" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34274194" sideWeight="0.6053985" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26344085" sideWeight="0.48200515" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -937,7 +941,8 @@
     <MESSAGE value="Table Class" />
     <MESSAGE value="Small fix to tableTest" />
     <MESSAGE value="TableTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="TableTest" />
+    <MESSAGE value="Game First pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game First pass" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -962,10 +967,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-          <folding>
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,10 +1032,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1275,13 +1274,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Files/NonRandom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestingSuite/BinTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1299,14 +1291,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Files/Outcome.java">
+    <entry file="file://$PROJECT_DIR$/Files/WheelTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding>
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-578">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Files/TableTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Files/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Files/RouletteGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1320,8 +1333,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Files/Bin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        <state relative-caret-position="117">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="7" />
           <folding>
             <element signature="e#497#498#0" expanded="true" />
             <element signature="e#534#535#0" expanded="true" />
@@ -1333,59 +1346,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Files/BinBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="173" column="27" selection-start-line="173" selection-start-column="23" selection-end-line="173" selection-end-column="27" />
+        <state relative-caret-position="543">
+          <caret line="216" column="28" selection-start-line="216" selection-start-column="23" selection-end-line="216" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Files/Player.java">
+    <entry file="file://$PROJECT_DIR$/Files/NonRandom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="-58">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Files/WheelTest.java">
+    <entry file="file://$PROJECT_DIR$/Files/Outcome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Files/Wheel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Files/Passenger57.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Files/TableTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="135">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Files/Table.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        <state relative-caret-position="136">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="5" />
           <folding>
             <element signature="e#782#783#0" expanded="true" />
             <element signature="e#804#805#0" expanded="true" />
@@ -1393,18 +1393,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Files/RouletteGame.java">
+    <entry file="file://$PROJECT_DIR$/Files/Passenger57.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+        <state relative-caret-position="187">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Files/RouletteGameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="119">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding />
         </state>
       </provider>

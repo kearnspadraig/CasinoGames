@@ -25,6 +25,16 @@ public class WheelTest {
     }
 
     @Test
+    public void getOutcome() throws Exception{
+        assertNotNull(wheel.getAllOutcomes());
+
+        wheel.addOutcome(5, new Outcome("TestOutcome", 20));
+        assertNotNull(wheel.getOutcome("TestOutcome"));
+
+        assertNotNull(wheel.getOutcome("Black Bet"));
+    }
+
+    @Test
     public void spinTest() throws Exception {
         Bin winningBin = wheel.spin();
 

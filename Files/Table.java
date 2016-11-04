@@ -15,16 +15,18 @@ public class Table {
   Wheel wheel;
 
 
-  Table(){
-    minimumBet = 2;
+  Table(Wheel inWheel){
+    minimumBet = 1;
     limit = getLimit(minimumBet);
     bets = new LinkedList<>();
+    wheel = inWheel;
   }
 
-  Table(int minimumBetT){
+  Table(Wheel inWheel, int minimumBetT){
     bets = new LinkedList<>();
     minimumBet = minimumBetT;
     limit = getLimit(minimumBet);
+    wheel = inWheel;
   }
 
   int getLimit(int minimum){
@@ -35,6 +37,10 @@ public class Table {
     if(isValid(bet)) {
       bets.add(bet);
     }
+  }
+
+  public void removeAllBets(){
+    bets.clear();
   }
 
   public void removeBet(Bet bet){

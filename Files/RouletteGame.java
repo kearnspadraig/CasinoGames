@@ -1,5 +1,7 @@
 package Files;
 
+import java.util.Iterator;
+
 /**
  * Created by Padraig on 24/10/2016.
  */
@@ -18,4 +20,29 @@ class RouletteGame {
     static final int HighBet = 1;
     static final int LowBet = 1;
 
+    Wheel wheel;
+    Table table;
+    Player player;
+
+    RouletteGame(Wheel inWheel, Table inTable){
+        wheel = inWheel;
+        table = inTable;
+    }
+
+    public void cycle(Player inPlayer){
+        player = inPlayer;
+        player.placeBets();
+        Bin winningBin = wheel.spin();
+
+        Iterator<Bet> tableBets = table.iterator();
+        while(tableBets.hasNext()){
+            Bet currentBet = tableBets.next();
+            if(winningBin.hasOutcome(currentBet.getOutcome())){
+                player.win(currentBet);
+            }else{
+                player.lose(currentBet);
+            }
+        }
+        table.removeAllBets();
+    }
 }

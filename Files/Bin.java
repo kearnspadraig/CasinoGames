@@ -28,6 +28,10 @@ public class Bin {
         outcomes.add(outcome);
     }
 
+    public boolean hasOutcome(Outcome check){
+        return outcomes.contains(check);
+    }
+
     public Iterator<Outcome> outcomeIter(){
         return outcomes.iterator();
     }

@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Random;
 
 import static org.junit.Assert.*;
 
@@ -15,7 +16,8 @@ import static org.junit.Assert.*;
 public class TableTest {
   Outcome testOutcome = new Outcome("TestOutcome", 10);
   Bet testBet1 = new Bet(5, testOutcome);
-  Table table = new Table(2);
+  Wheel wheel = new Wheel(new Random(37));
+  Table table = new Table(wheel, 2);
 
   @Test
   public void placeBet() throws Exception {

@@ -12,6 +12,8 @@ public class Bet {
         outcome = outcomeT;
     }
 
+    Outcome getOutcome(){return outcome;}
+
     int winAmount(){
         return outcome.winAmount(amount) + amount;
     }

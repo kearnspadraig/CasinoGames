@@ -26,12 +26,20 @@ public abstract class Player {
     public abstract void placeBets();
     public abstract boolean playing();
 
+    public void setStake(int inStake){
+        stake = inStake;
+    }
+
+    public void setRoundsToGo(int inRoundsToGo){
+        roundsToGo = inRoundsToGo;
+    }
+
     public void win(Bet winningBet){
         stake = stake + winningBet.winAmount();
     }
 
     public void lose(Bet losingBet){
-        System.out.println("Lose");
+        //System.out.println("Lose");
     }
         //ToDo
 }

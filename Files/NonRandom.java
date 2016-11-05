@@ -33,7 +33,7 @@ public class NonRandom extends Random {
     }
 
     public int nextInt(int newMax){
-        max = newMax;
+        max = newMax -1;
         return this.next();
     }
 }

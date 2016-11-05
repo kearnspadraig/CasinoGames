@@ -5,7 +5,7 @@ import java.util.Iterator;
 /**
  * Created by Padraig on 24/10/2016.
  */
-class RouletteGame {
+class RouletteGame extends Game{
     static final int StraightBet = 35;
     static final int SplitBet = 17;
     static final int StreetBet = 11;

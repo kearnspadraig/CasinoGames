@@ -20,6 +20,7 @@ public class Martingale extends Player {
         try{
             table.placeBet(black);
             this.stake -= black.loseAmount();
+            roundsToGo--;
         }catch(InvalidBet e){
             System.out.print("Failure to bet from Martingale Class");
         }
@@ -49,5 +50,10 @@ public class Martingale extends Player {
         for (int i = 0; i < lossCount; i++){
             betMultiple = betMultiple * 2;
         }
+    }
+
+    public String toString(){
+        return String.format("Player: \nStake %d \nLossCount %d\nbetMultiple %d\nRoundsToGo %d",
+                stake, lossCount, betMultiple, roundsToGo);
     }
 }

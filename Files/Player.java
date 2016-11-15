@@ -1,5 +1,7 @@
 package Files;
 
+import java.util.Set;
+
 /**
  * Created by Padraig on 04/11/2016.
  */
@@ -14,7 +16,7 @@ public abstract class Player {
     }
 
     Player(Table activeTable, int inStake){
-        stake = stake;
+        stake = inStake;
         table = activeTable;
     }
 
@@ -25,9 +27,14 @@ public abstract class Player {
 
     public abstract void placeBets();
     public abstract boolean playing();
+    public abstract void winners(Set<Outcome> winners);
 
     public void setStake(int inStake){
         stake = inStake;
+    }
+
+    public void setTable(Table inTable){
+        table = inTable;
     }
 
     public void setRoundsToGo(int inRoundsToGo){

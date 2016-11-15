@@ -8,10 +8,11 @@ import static org.junit.Assert.*;
 
 
 public class OutcomeTest {
+	Files.Wheel wheel = new Files.Wheel();
 
-	private final Outcome o1 = new Outcome("even", 2);
-    private final Outcome o2 = new Outcome("Any Craps", 8);
-    private final Outcome o3 = new Outcome("even",2);
+	private final Outcome o1 = wheel.getOutcome("Even Bet");
+    private final Outcome o2 = wheel.getOutcome("Odd Craps");
+    private final Outcome o3 = wheel.getOutcome("Even Bet");
 
 	@Test 
 	public void type() throws Exception {
@@ -29,7 +30,8 @@ public class OutcomeTest {
 	@Test
     public void testEqualityPass() throws Exception{
         assertTrue(o1 == o3);
-        assertTrue(o1.equals(o3));
+    System.out.println(String.format("This: %s\nOther: %s", o1.getName(), o3.getName()));
+    assertTrue(o1.equals(o3));
 		assertFalse(o1.equals(o2));
 	}
 

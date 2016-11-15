@@ -36,6 +36,7 @@ class RouletteGame extends Game{
         }
         player.placeBets();
         Bin winningBin = wheel.spin();
+        player.winners(winningBin.getOutcomes());
 
         Iterator<Bet> tableBets = table.iterator();
         while(tableBets.hasNext()){

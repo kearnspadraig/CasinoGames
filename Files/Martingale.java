@@ -1,11 +1,17 @@
 package Files;
 
+import java.util.Set;
+
 /**
  * Created by Padraig on 04/11/2016.
  */
 public class Martingale extends Player {
     int lossCount = 0;
     int betMultiple = 1;
+
+    Martingale(){
+        super();
+    }
 
     Martingale(Table table, int inStake){
         super(table, inStake);
@@ -24,6 +30,10 @@ public class Martingale extends Player {
         }catch(InvalidBet e){
             System.out.print("Failure to bet from Martingale Class");
         }
+    }
+
+    public void winners(Set<Outcome> winners){
+
     }
 
     public boolean playing(){

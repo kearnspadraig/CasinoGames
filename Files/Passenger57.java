@@ -1,5 +1,7 @@
 package Files;
 
+import java.util.Set;
+
 /**
  * Created by Padraig on 04/11/2016.
  */
@@ -7,14 +9,31 @@ public class Passenger57 extends Player {
     Outcome black ;
     Table table;
 
+    public Passenger57(){
+        super();
+    }
+
     Passenger57(Table activeTable){
         table = activeTable;
         //System.out.println("Table.wheel = " + table.wheel.toString());
         black = activeTable.wheel.getOutcome("Black Bet");
     }
 
+    Passenger57(Table activeTable, int inStake){
+      super(activeTable, inStake);
+    }
+    Passenger57(Table activeTable, int inStake, int inRoundsToGo){
+      super(activeTable, inStake, inRoundsToGo);
+    }
+
+    public void winners(Set<Outcome> winners){
+
+    }
+
     public boolean playing(){
-        return (5 < stake && roundsToGo > 0);
+      boolean playing = (5 < stake && roundsToGo > 0);
+      //System.out.println(String.format("Playing : %s\nStake : %d\nRoundsToGo : %d",playing, stake, roundsToGo));
+      return playing;
     }
 
     public void placeBets(){

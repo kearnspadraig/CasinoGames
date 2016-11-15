@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Vector;
 import java.util.Random;
 
-class Wheel {
+public class Wheel {
     private Vector<Bin> bins;
     private Random rng;
 

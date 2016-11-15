@@ -21,10 +21,28 @@ public class Simulator {
         game = inGame;
     }
 
+    public Simulator(Player inPlayer, RouletteGame inGame, int inInitStake, int inInitDuration, int inSamples){
+        this(inPlayer, inGame);
+        initState = inInitStake;
+        initDuration = inInitDuration;
+        samples = inSamples;
+
+    }
+
     public LinkedList session(){
-        player = new Martingale(game.table, initState, initDuration);
+        if (player.equals(null)) {
+            System.out.println("No Player Given");
+            player = new Martingale(game.table, initState, initDuration);
+        }
+        try{
+            player = player.getClass().newInstance();
+        }catch(Exception e){
+            System.out.println(e.toString());
+        }
         player.setStake(initState);
         player.setRoundsToGo(initDuration);
+        player.setTable(game.table);
+        //}
         LinkedList<Integer> stakes = new LinkedList<Integer>();
         while (player.playing()){
             game.cycle(player);
@@ -35,6 +53,8 @@ public class Simulator {
 
     public void gather(){
         LinkedList<Integer> stakesInSample;
+        maxima = new LinkedList();
+        durations = new LinkedList();
         for (int i = 0; i < samples; i++){
             stakesInSample = session();
             durations.add(stakesInSample.size());

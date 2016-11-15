@@ -36,6 +36,10 @@ public class Bin {
         return outcomes.iterator();
     }
 
+    public Set<Outcome> getOutcomes(){
+        return outcomes;
+    }
+
     public String toString(){
         String readable = "";
         for(Outcome o: outcomes){

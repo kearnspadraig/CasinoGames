@@ -14,6 +14,7 @@ public class Outcome implements Comparable {
 	}
 	
 	public boolean equals(Outcome other){
+		System.out.println(String.format("This: %s\nOther: %s", this.name, other.name));
 		return (other.name.equals(this.name));
 	}
 

@@ -33,7 +33,7 @@ public class Martingale extends Player {
     }
 
     public void winners(Set<Outcome> winners){
-
+        roundsToGo--;
     }
 
     public boolean playing(){

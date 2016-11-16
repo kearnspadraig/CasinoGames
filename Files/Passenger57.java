@@ -27,7 +27,7 @@ public class Passenger57 extends Player {
     }
 
     public void winners(Set<Outcome> winners){
-
+        roundsToGo--;
     }
 
     public boolean playing(){

@@ -32,6 +32,7 @@ public class SevenReds extends Martingale {
     }else{
       redCount = 7;
     }
+    roundsToGo--;
   }
 
 }

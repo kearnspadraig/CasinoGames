@@ -1,6 +1,9 @@
 package Files;
 
+import java.util.Dictionary;
+import java.util.HashMap;
 import java.util.Set;
+import java.util.Hashtable;
 
 /**
  * Created by Padraig on 04/11/2016.
@@ -9,15 +12,15 @@ public class Martingale extends Player {
     int lossCount = 0;
     int betMultiple = 1;
 
-    Martingale(){
+    public Martingale(){
         super();
     }
 
-    Martingale(Table table, int inStake){
+    public Martingale(Table table, int inStake){
         super(table, inStake);
     }
 
-    Martingale(Table table, int inStake, int inRoundsToGo){
+    public Martingale(Table table, int inStake, int inRoundsToGo){
         super(table, inStake, inRoundsToGo);
     }
 
@@ -62,6 +65,12 @@ public class Martingale extends Player {
         }
     }
 
+    public HashMap<String, Integer> getVariables(){
+        HashMap<String, Integer> values = new HashMap<String, Integer>(2);
+        values.put("lossCount", lossCount);
+        values.put("betMultiple", betMultiple);
+        return values;
+    }
     public String toString(){
         return String.format("Player: \nStake %d \nLossCount %d\nbetMultiple %d\nRoundsToGo %d",
                 stake, lossCount, betMultiple, roundsToGo);

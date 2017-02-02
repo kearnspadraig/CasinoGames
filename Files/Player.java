@@ -32,6 +32,7 @@ public abstract class Player {
     public void setStake(int inStake){
         stake = inStake;
     }
+    public int getStake() { return stake;}
 
     public void setTable(Table inTable){
         table = inTable;
@@ -40,6 +41,7 @@ public abstract class Player {
     public void setRoundsToGo(int inRoundsToGo){
         roundsToGo = inRoundsToGo;
     }
+    public int getRoundsToGo() { return roundsToGo;}
 
     public void win(Bet winningBet){
         stake = stake + winningBet.winAmount();

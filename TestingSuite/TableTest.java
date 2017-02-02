@@ -1,5 +1,9 @@
-package Files;
+package TestingSuite;
 
+import Files.Bet;
+import Files.Outcome;
+import Files.Table;
+import Files.Wheel;
 import org.junit.Test;
 
 import java.util.Collection;
@@ -22,7 +26,7 @@ public class TableTest {
   @Test
   public void placeBet() throws Exception {
     table.placeBet(testBet1);
-    Collection<Bet> allBets = table.bets;
+    Collection<Bet> allBets = table.getBets();
     boolean found = false;
     for (Bet b: allBets
          ) {
@@ -37,7 +41,7 @@ public class TableTest {
   public void removeBet() throws Exception {
     table.placeBet(testBet1);
     table.removeBet(testBet1);
-    Collection<Bet> allBets = table.bets;
+    Collection<Bet> allBets = table.getBets();
     boolean found = false;
     for (Bet b: allBets
             ) {
@@ -61,7 +65,7 @@ public class TableTest {
     table.placeBet(testBet1);
     table.placeBet(new Bet(50, testOutcome));
 
-    Collection<Bet> allBets = table.bets;
+    Collection<Bet> allBets = table.getBets();
     for (Bet b: allBets
             ) {
       total += b.loseAmount();

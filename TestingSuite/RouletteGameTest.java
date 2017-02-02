@@ -1,5 +1,6 @@
-package Files;
+package TestingSuite;
 
+import Files.*;
 import org.junit.Test;
 
 import java.util.Random;

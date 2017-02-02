@@ -13,16 +13,16 @@ public class Passenger57 extends Player {
         super();
     }
 
-    Passenger57(Table activeTable){
+    public Passenger57(Table activeTable){
         table = activeTable;
         //System.out.println("Table.wheel = " + table.wheel.toString());
         black = activeTable.wheel.getOutcome("Black Bet");
     }
 
-    Passenger57(Table activeTable, int inStake){
+    public Passenger57(Table activeTable, int inStake){
       super(activeTable, inStake);
     }
-    Passenger57(Table activeTable, int inStake, int inRoundsToGo){
+    public Passenger57(Table activeTable, int inStake, int inRoundsToGo){
       super(activeTable, inStake, inRoundsToGo);
     }
 

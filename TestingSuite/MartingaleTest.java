@@ -1,7 +1,9 @@
-package Files;
+package TestingSuite;
 
+import Files.*;
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.Random;
 
 import static org.junit.Assert.*;
@@ -17,6 +19,8 @@ public class MartingaleTest {
 
     Bet black = new Bet(1, wheel.getOutcome("Black Bet"));
 
+    HashMap<String, Integer> martinValues = martin.getVariables();
+
     @Test
     public void placeBets() throws Exception {
         table.removeAllBets();
@@ -24,17 +28,20 @@ public class MartingaleTest {
         martin.placeBets();
         assertTrue(table.betsPlacedTotal() > 0);
 
-        assertTrue(table.bets.toString().contains("Black Bet"));
+        assertTrue(table.getBets().toString().contains("Black Bet"));
     }
 
     @Test
     public void playing() throws Exception {
         while (table.isValid(black)){
-            System.out.println(String.format("Betting %d \n LossCount %d", martin.betMultiple, martin.lossCount));
+            martinValues = martin.getVariables();
+            int martinBetMultiple = martinValues.get("betMultiple");
+            System.out.println(String.format("Betting %d \n LossCount %d",
+                    martinBetMultiple , martinValues.get("lossCount")));
 
             martin.lose(black);
-            black = new Bet(martin.betMultiple, black.getOutcome());
-            if (martin.betMultiple > table.getLimit()){
+            black = new Bet(martinBetMultiple , black.getOutcome());
+            if (martinBetMultiple > table.getLimit()){
                 System.out.println("Betting over limit");
             }
         }
@@ -46,19 +53,21 @@ public class MartingaleTest {
 
     @Test
     public void win() throws Exception {
-        int start = martin.stake;
+        int start = martin.getStake();
         martin.win(black);
-        assertTrue(martin.stake == start + black.winAmount());
+        assertTrue(martin.getStake() == start + black.winAmount());
     }
 
     @Test
     public void lose() throws Exception {
-        int startCount = martin.lossCount;
-        int startBet = martin.betMultiple;
+        martinValues = martin.getVariables();
+        int startCount = martinValues.get("lossCount");
+        int startBet = martinValues.get("betMultiple");
 
         martin.lose(black);
-        assertTrue(startCount + 1 == martin.lossCount);
-        assertTrue(startBet * 2 == martin.betMultiple);
+        martinValues = martin.getVariables();
+        assertTrue(startCount + 1 == martinValues.get("lossCount"));
+        assertTrue(startBet * 2 == martinValues.get("betMultiple"));
     }
 
 

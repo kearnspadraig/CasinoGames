@@ -7,7 +7,7 @@ public class Bet {
     private int amount;
     private Outcome outcome;
 
-    Bet(int amountT, Outcome outcomeT){
+    public Bet(int amountT, Outcome outcomeT){
         amount = amountT;
         outcome = outcomeT;
     }

@@ -1,5 +1,9 @@
-package Files;
+package TestingSuite;
 
+import Files.Bin;
+import Files.NonRandom;
+import Files.Outcome;
+import Files.Wheel;
 import org.junit.Test;
 
 import java.util.Iterator;

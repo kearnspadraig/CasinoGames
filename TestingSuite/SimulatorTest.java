@@ -1,7 +1,9 @@
-package Files;
+package TestingSuite;
 
+import Files.*;
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Random;
 
@@ -36,9 +38,9 @@ public class SimulatorTest {
     @Test
     public void gather() throws Exception {
         //ToDo False test
-        sim.gather();
-        System.out.println(sim.maxima);
-        System.out.println(sim.durations);
+        HashMap values = sim.gather();
+        System.out.println(values.get("maxima"));
+        System.out.println(values.get("durations"));
     }
 
 }

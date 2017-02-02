@@ -1,5 +1,7 @@
-package Files;
+package TestingSuite;
 
+import Files.Bet;
+import Files.Outcome;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

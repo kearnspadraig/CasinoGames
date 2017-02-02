@@ -1,5 +1,7 @@
-package Files;
+package TestingSuite;
 
+import Files.IntegerStatistics;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -21,7 +23,7 @@ public class IntegerStatisticsTest {
          ) {
       list.add(i);
     }
-    assertEquals(IntegerStatistics.mean(list), 7.5, .00001);
+    Assert.assertEquals(IntegerStatistics.mean(list), 7.5, .00001);
 
   }
 

@@ -15,15 +15,15 @@ public class Table {
   Wheel wheel;
 
 
-  Table(Wheel inWheel){
+  public Table(Wheel inWheel){
     minimumBet = 1;
     limit = getLimit(minimumBet);
-    bets = new LinkedList<>();
+    bets = new LinkedList<Bet>();
     wheel = inWheel;
   }
 
-  Table(Wheel inWheel, int minimumBetT){
-    bets = new LinkedList<>();
+  public Table(Wheel inWheel, int minimumBetT){
+    bets = new LinkedList<Bet>();
     minimumBet = minimumBetT;
     limit = getLimit(minimumBet);
     wheel = inWheel;
@@ -41,6 +41,10 @@ public class Table {
     if(isValid(bet)) {
       bets.add(bet);
     }
+  }
+
+  public Collection<Bet> getBets(){
+    return bets;
   }
 
   public void removeAllBets(){

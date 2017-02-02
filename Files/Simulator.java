@@ -1,5 +1,8 @@
 package Files;
 
+import sun.awt.image.ImageWatched;
+
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -51,7 +54,7 @@ public class Simulator {
         return stakes;
     }
 
-    public void gather(){
+    public HashMap gather(){
         LinkedList<Integer> stakesInSample;
         maxima = new LinkedList();
         durations = new LinkedList();
@@ -67,5 +70,9 @@ public class Simulator {
             }
             maxima.add(max);
         }
+        HashMap<String, List> gatheredValues = new HashMap<>(2);
+        gatheredValues.put("maxima", maxima);
+        gatheredValues.put("durations", durations);
+        return gatheredValues;
     }
 }
